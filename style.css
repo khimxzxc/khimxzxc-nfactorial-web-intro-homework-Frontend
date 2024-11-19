@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1920px;
+    width: calc(100% - 20px);
+    margin: 0 auto;
+    padding-top: 5px;
+}
+
+.Row {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.Row-item-one {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.Row-one, .red-one {
+    height: 100px;
+    background-color: red;
+}
+
+.blue-one {
+    background-color: blue;
+}
+
+.row-two {
+    padding-top: 18px;
+}
+
+.Row-item-two {
+    display: grid;
+    grid-template-columns: 10fr 2fr;
+}
+
+.green-one {
+    background-color: green;
+}
+
+.blue-two {
+    background-color: blue;
+}
+
+.Row-item-three {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr 4fr 1fr);
+}
+
+
+
+.Row-five {
+    position: relative;
+    z-index: -10;
+    background-color: green;
+    display: grid;
+    justify-content: center;
+}
+
+.red-five {
+    margin-top: 26px;
+    height: 50px; 
+    width: 50px;
+    background-color: red;
+    /*
+    height and width сделать адаптивным дома через формулу
+    */
+}
+
+.Row-six {
+    background-color: red;
+}
+
+.blue-six {
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    margin-top: 0;
+}
+
+
+.Row-item-seven {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+}
+
+.rowseven {
+    background-color: blue;
+    position: relative;
+    z-index: -10;
+    align-content: center;
+}
+
+.row-seven-green {
+    height: 25px;
+    background-color: green;
+}
+
+.Row-eight {
+    background-color: #fcdd76;
+}
+
+.row-eight {
+    display: flex;
+    justify-content: space-evenly;
+    gap: calc(25px + 25 * ((100vw - 320px) / 1600));
+    
+
+}
+
+.row-green-eight {
+    height: 100px;
+    width: calc(50px + 150 * ((100vw - 320px) / 1600));
+    background-color: green;
+}
+
+
+.row-nine {
+    gap: calc(25px + 75 * ((100vw - 320px) / 1600));
+
+}
+
+.row-nine-green {
+    width: calc(50px + 50 * ((100vw - 320px) / 1600));
+}
